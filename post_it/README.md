@@ -1,6 +1,6 @@
 # TWP_project
 
-Welcome to TWP! The following instructions should help you work with this project.
+Welcome to this post-it project! The following instructions should help you work with this project.
 
 ## Description
 
