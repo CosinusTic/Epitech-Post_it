@@ -1,21 +1,16 @@
-# post_it
+# TWP_project
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to TWP! The following instructions should help you work with this project.
+
+## Description
+
+This website is a post-it app. It enables the user to see which tasks he has to do, as well as to add, delete, and modify them.
+
+The post it cards are linked to a private API, hence, you may not be able to really use the website (you won't be able to read, or interact with the cards).
 
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
 ## Customize configuration
 
@@ -33,7 +28,7 @@ npm install
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Compile and Minify for Production
 
 ```sh
 npm run build
@@ -44,3 +39,15 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Routes
+1. "/": The default path when the app is launched, displays the home view with all the cards. Possibility to access and delete each card on this view.This view also presents the user with the option to add a card. 
+2. "/Card/:id": The view displaying the card that was clicked on in the home view, possibility to edit the components of the card
+3. "/AddCard": The view that is clicked on when the user clicks on the "Add a card" button. The view presents the user with a form to fill which corresponds to the fields of the card, and which redirects the user to the home view.
+4. "/ModifyCard/:id": The user is redirected to this view when clicking on the "Modify Card" button from the "/Card/:id" view. This view presents the user with another form which enables to modify a certain card.
+
+
+### Authors
+-> Nathan Delmarche
+-> Côme Mençon
+
